@@ -1,2 +1,6 @@
 Flask
-SQLAlchemy
+Fabric
+Flask-SQLAlchemy
+Flask-WTF
+WTForms
+coverage
