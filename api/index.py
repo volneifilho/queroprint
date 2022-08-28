@@ -7,7 +7,7 @@ app = Flask(__name__)
 if __name__ == '__main__':
     app.run(debug=True)
     
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_DATABASE_URI'] = postgresql://admin:JAeU769fyZ6IogeiZjTdcpA9hHxCcA@us-east-1.9f274b2f-ae64-4bdf-ab4d-e8e376318904.aws.ybdb.io:5433/queroprint
 db = SQLAlchemy(app)
 
 class Item(db.Model):
