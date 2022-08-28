@@ -1,6 +1,3 @@
-Flask
-Fabric
+flask
+psycopg2-binary
 Flask-SQLAlchemy
-Flask-WTF
-WTForms
-coverage
