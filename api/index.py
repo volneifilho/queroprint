@@ -5,7 +5,7 @@ from flask import (
     render_template,
     request
 )
-from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy import SQLAlchemy
 
 from .utils import add_up
 
