@@ -1,3 +1,3 @@
-selenium
-fastapi
-uvicorn
+selenium==3.141.0
+fastapi==0.68.1
+uvicorn==0.15.0
