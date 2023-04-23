@@ -1,1 +1,1 @@
-# queroprint v2.0 ChatGPT Edition
+# queroprint v2.0 no working Edition
