@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -9,13 +9,13 @@ import argparse
 
 
 def take_screenshot(url: str) -> str:
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
+    firefox_options = Options()
+    firefox_options.add_argument("--headless")
+    firefox_options.add_argument("--disable-gpu")
+    firefox_options.add_argument("--no-sandbox")
+    firefox_options.add_argument("--disable-dev-shm-usage")
 
-    with webdriver.Chrome(options=chrome_options) as driver:
+    with webdriver.Firefox(options=firefox_options) as driver:
         driver.get(url)
 
         # Wait for the page to finish loading
