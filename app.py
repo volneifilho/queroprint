@@ -13,7 +13,7 @@ def generate_form() -> str:
             <h1>Gerar Screenshot</h1>
             <form action="/screenshot" method="get">
                 <label for="url">URL:</label>
-                <input type="text" id="url" name="url" value="https://web.whatsapp.com/" required>
+                <input type="text" id="url" name="url" value="https://www.google.com/" required>
                 <button type="submit">Gerar Screenshot</button>
             </form>
         </body>
