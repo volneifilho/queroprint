@@ -22,7 +22,7 @@ O projeto consiste em três arquivos principais:
     docker run -d -p 7000:7000 screenshot-app
     ```
 
-Agora, o aplicativo estará disponível em `http://localhost:7000`. Você pode acessar essa URL em um navegador web para usar o aplicativo.
+Agora, o aplicativo estará disponível em `http://localhost:7000/screenshot`. Você pode acessar essa URL em um navegador web para usar o aplicativo.
 
 ![image](https://github.com/volneifilho/queroprint/assets/79425059/152c3214-fe77-4165-9998-a9b98b0173fe)
 
