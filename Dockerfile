@@ -10,8 +10,11 @@ RUN apt-get update && apt-get install -y \
     firefox-esr
 
 # Instale o GeckoDriver
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux-aarch64.tar.gz && \
-    tar -xvf geckodriver-v0.33.0-linux-aarch64.tar.gz && \
+# Versões para arquitetura ARM e X64
+# RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux-aarch64.tar.gz && \
+#    tar -xvf geckodriver-v0.33.0-linux-aarch64.tar.gz && \
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz && \
+    tar -xvf geckodriver-v0.33.0-linux64.tar.gz && \
     chmod +x geckodriver && \
     mv geckodriver /usr/local/bin
 
